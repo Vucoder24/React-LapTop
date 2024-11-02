@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { HiOutlineBell, HiOutlineChatAlt, HiOutlineSearch } from 'react-icons/hi'
+import { HiOutlineBell, HiOutlineChatAlt, HiOutlineLogout, HiOutlineSearch } from 'react-icons/hi'
 import { Menu, Popover, Transition } from '@headlessui/react'
 import classNames from 'classnames'
 import logoAdmin from '../../assets/icons/hacker.png'
@@ -134,11 +134,14 @@ export default function Header() {
                                     <div
                                         className={classNames(
                                             active && 'bg-gray-100',
-                                            'text-gray-700 focus:bg-gary-200 block cursor-pointer rounded-sm px-4 py-2'
+                                            'flex flex-1 gap-1 text-gray-700 focus:bg-gary-200 block cursor-pointer rounded-sm px-4 py-2'
                                         )}
                                         onClick={() => navigate('/logout')}
                                     >
                                         Logout
+                                        <span className="text-x pt-0.5 px-1/5">
+                                            <HiOutlineLogout />
+                                        </span>
                                     </div>
                                 )}
                             </Menu.Item>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { IoBagHandle } from 'react-icons/io5'
+import { IoBagHandle, IoCart, IoPeople, IoPieChart } from 'react-icons/io5'
 
 export default function DashboardStatsGrid() {
     return (
@@ -18,7 +18,7 @@ export default function DashboardStatsGrid() {
             </BoxWrapper>
             <BoxWrapper>
                 <div className="rounded-full h-12 w-12 flex items-center justify-center bg-orange-500">
-                    <IoBagHandle className="text-2xl text-white" />
+                    <IoPieChart className="text-2xl text-white" />
                 </div>
                 <div className="pl-4">
                     <span className="text-sm text-gray-500 font-light">Total Expenses</span>
@@ -30,7 +30,7 @@ export default function DashboardStatsGrid() {
             </BoxWrapper>
             <BoxWrapper>
                 <div className="rounded-full h-12 w-12 flex items-center justify-center bg-yellow-500">
-                    <IoBagHandle className="text-2xl text-white" />
+                    <IoPeople className="text-2xl text-white" />
                 </div>
                 <div className="pl-4">
                     <span className="text-sm text-gray-500 font-light">Total Customers</span>
@@ -42,7 +42,7 @@ export default function DashboardStatsGrid() {
             </BoxWrapper>
             <BoxWrapper>
                 <div className="rounded-full h-12 w-12 flex items-center justify-center bg-green-500">
-                    <IoBagHandle className="text-2xl text-white" />
+                    <IoCart className="text-2xl text-white" />
                 </div>
                 <div className="pl-4">
                     <span className="text-sm text-gray-500 font-light">Total Orders</span>
